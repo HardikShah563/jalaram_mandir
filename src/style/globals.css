@@ -226,6 +226,10 @@ button,
     padding: 2px;
 }
 
+.event-banner-2023-img {
+    width: 50vw;
+}
+
 @media (max-width: 1000px) {
     .about-grid {
         width: 90%;
@@ -252,6 +256,10 @@ button,
 
     .about-img {
         width: 150px;
+    }
+
+    .event-banner-2023-img {
+        width: 65vw;
     }
 }
 
@@ -288,6 +296,10 @@ button,
     .modal {
         padding: 10px;
     }
+
+    .event-banner-2023-img {
+        width: 80vw;
+    }
 }
 
 @media (max-width: 400px) {
@@ -303,6 +315,15 @@ button,
 
     .small-heading {
         text-align: center;
+    }
+
+    .event-banner-2023-img {
+        width: 95vw;
+    }
+
+    .black-button {
+        font-size: 14px;
+        padding: 10px 20px;
     }
 }
 

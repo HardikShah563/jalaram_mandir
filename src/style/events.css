@@ -87,8 +87,8 @@
 /* PAST EVENT CART */
 /* =============== */
 .past-event {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    display: flex;
+    justify-content: space-between;
     padding: 10px;
     margin: 10px;
     border: 2px solid var(--secondary);
@@ -98,9 +98,9 @@
     font-weight: 600;
 }
 
-.past-event-location, .past-event-date {
-    justify-content: right;
-    align-items: center;
+.past-event-name {
+    width: 200px;
+    min-width: 60px;
 }
 
 @media (max-width: 900px) {
