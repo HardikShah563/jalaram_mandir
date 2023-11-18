@@ -6,7 +6,7 @@ export default function Donate() {
 
                 <div className="w-80 mg-a-a">
                     <p className="main-text">
-                        There are several options to make a donation to Shree Siddhivinayak Ganapati Temple (Prabhadevi) Trust like Cheques & Demand Drafts, Cash Cards, Credit Cards, Debit Cards and Internet Banking (Net Banking).
+                        There are several options to make a donation to Jalaram Bhakt Mandal (Bhandup) Trust like Cheques & Demand Drafts, Cash Cards, Credit Cards, Debit Cards and Internet Banking (Net Banking).
                     </p>
 
                     <br />
