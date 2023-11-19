@@ -19,6 +19,18 @@ export default function Events() {
                     <div className="small-page">
                         <h1 className="subtitle txt-ctr">Jalaram Jayanti 2023</h1>
                         <h1 className="txt-ctr margin-top-bottom-20">19th October 2023, 6:30 A.M. Onwards</h1>
+
+                        <img
+                            className="mg-a-a event-banner-2023-img"
+                            src={
+                                process.env.PUBLIC_URL +
+                                "/Assets/event-banner-jalaram.jpg"
+                            }
+                            alt="jalaram jayanti 2023 banner"
+                        />
+
+                        <br />
+                        
                         <img
                             className="mg-a-a event-banner-2023-img"
                             src={
