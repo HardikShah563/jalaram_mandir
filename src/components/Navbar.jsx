@@ -37,7 +37,7 @@ export default function Navbar() {
         <>
             <nav className="nav">
                 <div className="nav-items">
-                    <div className="nav-logo cur" onClick={() => { navigate("/") }}>
+                    <div className="nav-logo cur" onClick={() => { navigate("/"); setShowNav(false); }}>
                         <h1>Jalaram Bhakt Mandal (Bhandup)</h1>
                     </div>
 
