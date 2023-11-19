@@ -47,6 +47,17 @@ export default function Home() {
                                 className="mg-a-a event-banner-2023-img"
                                 src={
                                     process.env.PUBLIC_URL +
+                                    "/Assets/event-banner-jalaram.jpg"
+                                }
+                                alt="jalaram jayanti 2023 banner"
+                            />
+
+                            <br />
+                            
+                            <img
+                                className="mg-a-a event-banner-2023-img"
+                                src={
+                                    process.env.PUBLIC_URL +
                                     "/Assets/event-banner-2023.jpg"
                                 }
                                 alt="jalaram jayanti 2023 banner"
