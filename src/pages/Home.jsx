@@ -42,7 +42,7 @@ export default function Home() {
 
                         <div className="small-page">
                             <h1 className="subtitle txt-ctr">Jalaram Jayanti 2023</h1>
-                            <h1 className="txt-ctr margin-top-bottom-20">19th October 2023, 6:30 A.M. Onwards</h1>
+                            <h1 className="txt-ctr margin-top-bottom-20">19th November 2023, 6:30 A.M. Onwards</h1>
                             <img
                                 className="mg-a-a event-banner-2023-img"
                                 src={
