@@ -26,7 +26,6 @@ export default function Navbar() {
 
     function logoutHandler() {
         // perform logout operation
-        // clear the session variables as well as the localhost
         ctxDispatch({
             type: "USER_SIGNOUT"
         });
@@ -49,9 +48,8 @@ export default function Navbar() {
                                     <div className="link-name cur">About</div>
                                 </li>
                                 <div className="dropdown-content">
-                                    <div onClick={() => navigate("/about/jalaram-bappa")}>Jalaram Bappa History</div>
-                                    <div onClick={() => navigate("/about/mandal")}>Jalaram Bhakt Mandal Bhandup</div>
-                                    {/* <div onClick={() => navigate("/team")}>Team</div> */}
+                                    <div onClick={() => { navigate("/about/jalaram-bappa"); setShowNav(false); }}>Jalaram Bappa History</div>
+                                    <div onClick={() => { navigate("/about/mandal"); setShowNav(false); }}>Jalaram Bhakt Mandal Bhandup</div>
                                 </div>
                             </div>
                         )}
@@ -59,7 +57,7 @@ export default function Navbar() {
                         {window.location.pathname.slice(0, 10) != "/dashboard" && (
                             <div className="dropdown">
                                 <li>
-                                    <div className="link-name cur" onClick={() => navigate("/events")}>Events</div>
+                                    <div className="link-name cur" onClick={() => { navigate("/events"); setShowNav(false); }}>Events</div>
                                 </li>
                                 <div className="dropdown-content">
                                 </div>
@@ -69,7 +67,7 @@ export default function Navbar() {
                         {window.location.pathname.slice(0, 10) != "/dashboard" && (
                             <div className="dropdown">
                                 <li>
-                                    <div className="link-name cur" onClick={() => navigate("/donation")}>Donation</div>
+                                    <div className="link-name cur" onClick={() => { navigate("/donation"); setShowNav(false); }}>Donation</div>
                                 </li>
                                 <div className="dropdown-content">
                                     {/* drop down items */}
@@ -82,7 +80,7 @@ export default function Navbar() {
                                 <>
                                     <div className="dropdown">
                                         <li>
-                                            <div className="link-name cur" onClick={() => navigate("/dashboard")}>Dashboard</div>
+                                            <div className="link-name cur" onClick={() => { navigate("/dashboard"); setShowNav(false); }}>Dashboard</div>
                                         </li>
                                     </div>
 
@@ -90,7 +88,7 @@ export default function Navbar() {
 
                                     <div className="dropdown">
                                         <li>
-                                            <div className="link-name cur" onClick={logoutHandler}>Log Out</div>
+                                            <div className="link-name cur" onClick={() => { logoutHandler(); setShowNav(false); }}>Log Out</div>
                                         </li>
                                     </div>
                                 </>
@@ -98,7 +96,7 @@ export default function Navbar() {
                                 <>
                                     <div className="dropdown">
                                         <li>
-                                            <div className="link-name cur" onClick={() => navigate("/login")}>Login</div>
+                                            <div className="link-name cur" onClick={() => { navigate("/login"); setShowNav(false); }}>Login</div>
                                         </li>
                                     </div>
 
