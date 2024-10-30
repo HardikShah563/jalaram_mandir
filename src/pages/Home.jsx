@@ -14,7 +14,15 @@ export default function Home() {
 
     return (
         <>
+            <div className="marquee-div">
+                <Marquee
+                    limit={20}
+                    text="Upcoming Event&nbsp;&nbsp;:&nbsp;&nbsp;Jalaram Jayanti - 8th November 2024&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp;&nbsp;&nbsp;&nbsp;"
+                    color={"yellow"}
+                />
+            </div>
             <div className="page">
+
                 {/* main section */}
                 <img
                     className="mg-a-a main-logo"
@@ -38,27 +46,30 @@ export default function Home() {
                 <div className="w-80 mg-a-a">
 
                     <div className="small-page">
-                        <h1 className="subtitle txt-ctr main-title" id="text-red">Today's Events</h1>
+                        {/* <h1 className="subtitle txt-ctr main-title" id="text-red">Upcoming Events</h1> */}
 
                         <div className="small-page">
-                            <h1 className="subtitle txt-ctr">Jalaram Jayanti 2023</h1>
-                            <h1 className="txt-ctr margin-top-bottom-20">19th November 2023, 6:30 A.M. Onwards</h1>
-                            <img
-                                className="mg-a-a event-banner-2023-img"
-                                src={
-                                    process.env.PUBLIC_URL +
-                                    "/Assets/event-banner-jalaram.jpg"
-                                }
-                                alt="jalaram jayanti 2023 banner"
-                            />
+                            <h1 className="subtitle txt-ctr">Jalaram Jayanti 2024</h1>
+                            <h1 className="txt-ctr margin-top-bottom-20">8th November 2024, 6:30 A.M. Onwards</h1>
 
                             <br />
-                            
+
                             <img
                                 className="mg-a-a event-banner-2023-img"
                                 src={
                                     process.env.PUBLIC_URL +
                                     "/Assets/event-banner-2023.jpg"
+                                }
+                                alt="jalaram jayanti 2023 banner"
+                            />
+
+                            <br />
+
+                            <img
+                                className="mg-a-a event-banner-2023-img"
+                                src={
+                                    process.env.PUBLIC_URL +
+                                    "/Assets/event-banner-jalaram.jpg"
                                 }
                                 alt="jalaram jayanti 2023 banner"
                             />
@@ -70,7 +81,7 @@ export default function Home() {
                     <div className="events">
                         <UpcomingEvent
                             eventName={"Julelal Jayanti"}
-                            eventDate={"10th April 2024"}
+                            eventDate={"10th April 2025"}
                             eventStartTime={"5:30 P.M."}
                         />
                     </div>
@@ -78,6 +89,16 @@ export default function Home() {
                     <h1 className="subtitle txt-ctr main-title" id="text-red">Past Events</h1>
 
                     <div className="events">
+                        <PastEvent
+                            eventName={"Julelal Jayanti"}
+                            eventDate={"10 April 2024"}
+                        />
+
+                        <PastEvent
+                            eventName={"Jalaram Jayanti"}
+                            eventDate={"19 November 2023"}
+                        />
+
                         <PastEvent
                             eventName={"Jalaram Jayanti"}
                             eventDate={"31 October 2022"}

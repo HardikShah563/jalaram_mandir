@@ -14,20 +14,11 @@ export default function Events() {
             <div className="w-80 mg-a-a">
 
                 <div className="small-page">
-                    <h1 className="subtitle txt-ctr main-title" id="text-red">Today's Events</h1>
+                    {/* <h1 className="subtitle txt-ctr main-title" id="text-red">Upcoming Events</h1> */}
 
                     <div className="small-page">
-                        <h1 className="subtitle txt-ctr">Jalaram Jayanti 2023</h1>
-                        <h1 className="txt-ctr margin-top-bottom-20">19th November 2023, 6:30 A.M. Onwards</h1>
-
-                        <img
-                            className="mg-a-a event-banner-2023-img"
-                            src={
-                                process.env.PUBLIC_URL +
-                                "/Assets/event-banner-jalaram.jpg"
-                            }
-                            alt="jalaram jayanti 2023 banner"
-                        />
+                        <h1 className="subtitle txt-ctr">Upcoming Jayanti 2025</h1>
+                        <h1 className="txt-ctr margin-top-bottom-20">8th November 2024, 6:30 A.M. Onwards</h1>
 
                         <br />
 
@@ -39,6 +30,17 @@ export default function Events() {
                             }
                             alt="jalaram jayanti 2023 banner"
                         />
+
+                        <br />
+
+                        <img
+                            className="mg-a-a event-banner-2023-img"
+                            src={
+                                process.env.PUBLIC_URL +
+                                "/Assets/event-banner-jalaram.jpg"
+                            }
+                            alt="jalaram jayanti 2023 banner"
+                        />
                     </div>
                 </div>
 
@@ -47,7 +49,7 @@ export default function Events() {
                 <div className="events">
                     <UpcomingEvent
                         eventName={"Julelal Jayanti"}
-                        eventDate={"10th April 2024"}
+                        eventDate={"10th April 2025"}
                         eventStartTime={"5:30 P.M."}
                     />
                 </div>
@@ -55,6 +57,16 @@ export default function Events() {
                 <h1 className="subtitle txt-ctr main-title" id="text-red">Past Events</h1>
 
                 <div className="events">
+                    <PastEvent
+                        eventName={"Julelal Jayanti"}
+                        eventDate={"10 April 2024"}
+                    />
+
+                    <PastEvent
+                        eventName={"Jalaram Jayanti"}
+                        eventDate={"19 November 2023"}
+                    />
+
                     <PastEvent
                         eventName={"Jalaram Jayanti"}
                         eventDate={"31 October 2022"}
