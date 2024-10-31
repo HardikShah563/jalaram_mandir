@@ -60,7 +60,7 @@ export default function Home() {
                                     process.env.PUBLIC_URL +
                                     "/Assets/event-banner-2023.jpg"
                                 }
-                                alt="jalaram jayanti 2023 banner"
+                                alt="jalaram jayanti 2024 banner"
                             />
 
                             <br />
@@ -71,7 +71,7 @@ export default function Home() {
                                     process.env.PUBLIC_URL +
                                     "/Assets/event-banner-jalaram.jpg"
                                 }
-                                alt="jalaram jayanti 2023 banner"
+                                alt="jalaram jayanti 2024 banner"
                             />
                         </div>
                     </div>
@@ -80,7 +80,7 @@ export default function Home() {
 
                     <div className="events">
                         <UpcomingEvent
-                            eventName={"Julelal Jayanti"}
+                            eventName={"Jhulelal Jayanti"}
                             eventDate={"10th April 2025"}
                             eventStartTime={"5:30 P.M."}
                         />
@@ -90,7 +90,7 @@ export default function Home() {
 
                     <div className="events">
                         <PastEvent
-                            eventName={"Julelal Jayanti"}
+                            eventName={"Jhulelal Jayanti"}
                             eventDate={"10 April 2024"}
                         />
 

@@ -17,7 +17,7 @@ export default function Events() {
                     {/* <h1 className="subtitle txt-ctr main-title" id="text-red">Upcoming Events</h1> */}
 
                     <div className="small-page">
-                        <h1 className="subtitle txt-ctr">Upcoming Jayanti 2025</h1>
+                        <h1 className="subtitle txt-ctr">Upcoming Jayanti 2024</h1>
                         <h1 className="txt-ctr margin-top-bottom-20">8th November 2024, 6:30 A.M. Onwards</h1>
 
                         <br />
@@ -28,7 +28,7 @@ export default function Events() {
                                 process.env.PUBLIC_URL +
                                 "/Assets/event-banner-2023.jpg"
                             }
-                            alt="jalaram jayanti 2023 banner"
+                            alt="jalaram jayanti 2024 banner"
                         />
 
                         <br />
@@ -39,7 +39,7 @@ export default function Events() {
                                 process.env.PUBLIC_URL +
                                 "/Assets/event-banner-jalaram.jpg"
                             }
-                            alt="jalaram jayanti 2023 banner"
+                            alt="jalaram jayanti 2024 banner"
                         />
                     </div>
                 </div>
@@ -48,7 +48,7 @@ export default function Events() {
 
                 <div className="events">
                     <UpcomingEvent
-                        eventName={"Julelal Jayanti"}
+                        eventName={"Jhulelal Jayanti"}
                         eventDate={"10th April 2025"}
                         eventStartTime={"5:30 P.M."}
                     />
@@ -58,7 +58,7 @@ export default function Events() {
 
                 <div className="events">
                     <PastEvent
-                        eventName={"Julelal Jayanti"}
+                        eventName={"Jhulelal Jayanti"}
                         eventDate={"10 April 2024"}
                     />
 
