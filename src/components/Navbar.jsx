@@ -97,7 +97,7 @@ export default function Navbar() {
                                     <div className="dropdown">
                                         <li>
                                             <div className="link-name cur">
-                                                <a href="dashboard.jalarammandir.org">
+                                                <a target="_blank" href="https://www.dashboard.jalarammandir.org">
                                                     Login
                                                 </a>
                                             </div>
