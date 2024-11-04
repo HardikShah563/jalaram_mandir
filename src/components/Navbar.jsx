@@ -96,7 +96,11 @@ export default function Navbar() {
                                 <>
                                     <div className="dropdown">
                                         <li>
-                                            <div className="link-name cur" onClick={() => { navigate("/login"); setShowNav(false); }}>Login</div>
+                                            <div className="link-name cur">
+                                                <a href="dashboard.jalarammandir.org">
+                                                    Login
+                                                </a>
+                                            </div>
                                         </li>
                                     </div>
 

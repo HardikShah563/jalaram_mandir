@@ -26,20 +26,20 @@ export default function DonationEntry() {
     console.log(currentEvent);
 
     useEffect(() => {
-        const fetchdata = async () => {
-            const { data } = await axios.get('http://localhost:5000/api/donation/max-receipt-no');
-            setFormData(prevState => {
-                return {
-                    ...prevState, receiptNo: (data.receiptNo + 1),
-                }
-            });
-        }
-        fetchdata();
+        // const fetchdata = async () => {
+        //     const { data } = await axios.get('http://localhost:5000/api/donation/max-receipt-no');
+        //     setFormData(prevState => {
+        //         return {
+        //             ...prevState, receiptNo: (data.receiptNo + 1),
+        //         }
+        //     });
+        // }
+        // fetchdata();
 
-        if (!userInfo) {
-            navigate('/login');
-        }
-        setSetEventView(false);
+        // if (!userInfo) {
+        //     navigate('/login');
+        // }
+        // setSetEventView(false);
     }, []);
 
     const [formData, setFormData] = useState({

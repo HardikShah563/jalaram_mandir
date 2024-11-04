@@ -9,15 +9,15 @@ export default function Dashboard() {
     const { userInfo } = state;
 
     useEffect(() => {
-        if (userInfo) {
-            if (!userInfo.isAdmin === true) {
-                navigate("/dashboard/donation-entry");
-                return;
-            }
-        }
-        else {
-            navigate("/dashboard/donation-entry");
-        }
+        // if (userInfo) {
+        //     if (!userInfo.isAdmin === true) {
+        //         navigate("/dashboard/donation-entry");
+        //         return;
+        //     }
+        // }
+        // else {
+        //     navigate("/dashboard/donation-entry");
+        // }
     }, [])
     return (
         <>

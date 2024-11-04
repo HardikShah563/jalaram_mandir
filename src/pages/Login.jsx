@@ -29,35 +29,35 @@ export default function Login() {
     const [color, setColor] = useState("");
 
     async function handleSubmit(event) {
-        event.preventDefault();
-        try {
-            const { data } = await axios.post('http://localhost:5000/api/user/login', {
-                email: formData.email,
-                password: formData.password
-            });
-            console.log(data);
-            if (data.message === "success") {
-                ctxDispatch({
-                    type: 'USER_SIGNIN',
-                    payload: data
-                });
-                localStorage.setItem("userInfo", JSON.stringify(data.user));
-                setMsg("Login Successful!");
-                setColor("green");
-                await delay(500);
-                setMsg("Redirecting... wait");
-                await delay(500);
-                navigate("/dashboard");
-                window.location.reload();
-            }
-            else {
-                setMsg(data.message);
-                setColor("red");
-            }
-        } catch (error) {
-            setMsg("Login Unsuccessful!");
-            setColor("red");
-        }
+        // event.preventDefault();
+        // try {
+        //     const { data } = await axios.post('http://localhost:5000/api/user/login', {
+        //         email: formData.email,
+        //         password: formData.password
+        //     });
+        //     console.log(data);
+        //     if (data.message === "success") {
+        //         ctxDispatch({
+        //             type: 'USER_SIGNIN',
+        //             payload: data
+        //         });
+        //         localStorage.setItem("userInfo", JSON.stringify(data.user));
+        //         setMsg("Login Successful!");
+        //         setColor("green");
+        //         await delay(500);
+        //         setMsg("Redirecting... wait");
+        //         await delay(500);
+        //         navigate("/dashboard");
+        //         window.location.reload();
+        //     }
+        //     else {
+        //         setMsg(data.message);
+        //         setColor("red");
+        //     }
+        // } catch (error) {
+        //     setMsg("Login Unsuccessful!");
+        //     setColor("red");
+        // }
     }
 
     return (
