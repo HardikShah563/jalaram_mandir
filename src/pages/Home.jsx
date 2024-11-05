@@ -1,6 +1,3 @@
-// importing vercel analytics
-import { Analytics } from "@vercel/analytics/react";
-
 // importing components
 import Marquee from "../components/Marquee";
 // importing icons
@@ -182,8 +179,6 @@ export default function Home() {
 
                 {/* <a href="https://www.shreejalarammandir.org/">https://www.shreejalarammandir.org/</a> */}
             </div>
-
-            <Analytics />
         </>
     );
 };
