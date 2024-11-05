@@ -49,7 +49,7 @@ export default function Events() {
                 <div className="events">
                     <UpcomingEvent
                         eventName={"Jhulelal Jayanti"}
-                        eventDate={"10th April 2025"}
+                        eventDate={"31st March 2025"}
                         eventStartTime={"5:30 P.M."}
                     />
                 </div>

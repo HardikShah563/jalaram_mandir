@@ -1,3 +1,6 @@
+// importing vercel analytics
+import { Analytics } from "@vercel/analytics/react";
+
 // importing components
 import Marquee from "../components/Marquee";
 // importing icons
@@ -81,7 +84,7 @@ export default function Home() {
                     <div className="events">
                         <UpcomingEvent
                             eventName={"Jhulelal Jayanti"}
-                            eventDate={"10th April 2025"}
+                            eventDate={"31st March 2025"}
                             eventStartTime={"5:30 P.M."}
                         />
                     </div>
@@ -179,6 +182,8 @@ export default function Home() {
 
                 {/* <a href="https://www.shreejalarammandir.org/">https://www.shreejalarammandir.org/</a> */}
             </div>
+
+            <Analytics />
         </>
     );
 };
